@@ -1,0 +1,187 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #073590;
+  --white: #ffffff;
+  --graa: #eae5e5;
+  --sort: #000000;
+  /* fonte */
+  font-family: 'forma-djr-banner', 'sans-serif';
+  font-weight: 100;
+  font-style: normal;
+
+  font-family: 'bodoni-urw', 'serif';
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+font-family: 'forma-djr-banner, sans-serif';
+}
+
+.nav{
+  background-color: var(--blue);
+  list-style: none;
+  text-align: right;
+  border-top: 2px solid var(--sort);
+  border-bottom: 2px solid var(--sort);
+  margin: 0px;
+}
+
+.nav > li {
+
+display: inline-block;
+padding: 20px 25px 20px 25px;
+font-size: 24px;
+font-family: 'forma-djr-banner';
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: var(--white);
+    float: right;
+}
+
+.nav > li > a:hover {
+  color: #c1c1c1;
+}
+
+
+
+.NSS > a {
+  float: left;
+  display: inline-block;
+  padding: 20px 25px 20px 200px;
+  font-size: 30px;
+  color: var(--white);
+  font-family: 'forma-djr-banner';
+  text-decoration: none;
+
+}
+
+.NSS > a:hover{
+  color: #c1c1c1;
+  background-color: inherit;
+}
+
+.banner{
+  width: 100%;
+  background-color: inherit;
+  height: 300px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+}
+
+.banner-image{
+  display: block;
+  margin-left: 380px;
+  height: 400px;
+  width: 600px;
+
+}
+
+h1{
+  text-align: center;
+  font-family: 'bodoni-urw';
+  margin-top: 150px;
+  font-size: 30px;
+}
+
+
+
+.column {
+  float: left;
+  width: 30%;
+  padding-left: 30px;
+  padding-right: 5px;
+  height: 300px;
+  background-color: var(--white);
+  font-family: 'bodoni-urw';
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img{
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+.img-sol{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 50%;
+}
+
+.column2{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  font-family: 'bodoni-urw';
+}
+
+.row-bottom{
+  padding-left: 10px;
+  padding-right: 80px;
+}
+
+.column-bottom {
+  float: left;
+  width: 30%;
+  text-align:  left;
+  padding-left: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: var(--white);
+  font-family: 'bodoni-urw';
+}
+
+/* Typografi */
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+/* Footer styling */
+
+footer{
+    background-color: var(--blue);
+    color: var(--white);
+    border-top: 2px solid var(--sort);
+    border-bottom: 2px solid var(--sort);
+    margin-top: 250px;
+}
+.footer-flex{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      justify-content: space-between;
+      margin-left: 50px;
+      margin-right: 50px;
+      font-family: 'bodoni-urw';
+
+
+
+}
+
+.footer-nss{
+  margin-right: 105px;
+  font-family: 'bodoni-urw';
+  font-size: 20px;
+}
